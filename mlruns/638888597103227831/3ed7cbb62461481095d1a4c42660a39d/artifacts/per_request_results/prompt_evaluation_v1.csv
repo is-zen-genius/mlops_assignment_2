@@ -1,0 +1,85 @@
+question_id,topic,question,prompt_version,model_name,call_path,start_time,end_time,latency_s,status,error_message,input_tokens,output_tokens,total_tokens,input_cost_usd,output_cost_usd,total_cost_usd,valid_json,response_text
+Q1,Machine Learning,What is the difference between supervised and unsupervised learning?,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:28:00.320,2026-11-05T03:28:32.765,32.4452,success,,50,300,350,5e-06,5.9999999999999995e-05,6.5e-05,False,"Supervised and unsupervised learning are two fundamental types of machine learning techniques used to train models on data. Here's a clear explanation of each:
+
+### Supervised Learning
+
+**Definition:** In supervised learning, the model is trained using labeled data, which means that the training dataset includes both input features and corresponding output labels.
+
+**Process:**
+1. **Training Phase:** The model learns from the labeled examples provided in the training dataset.
+2. **Prediction Phase:** Once trained, the model can predict the output for new, unseen data based on its learned patterns.
+
+**Examples:**
+- **Classification Tasks:** Predicting whether an email is spam or not spam.
+- **Regression Tasks:** Estimating the price of a house based on various features like size, location, etc.
+
+### Unsupervised Learning
+
+**Definition:** In unsupervised learning, the model is trained using unlabeled data, meaning there are no predefined output labels in the training dataset.
+
+**Process:**
+1. **Clustering:** Grouping similar data points together without prior knowledge of groupings.
+2. **Dimensionality Reduction:** Reducing the number of random variables under consideration by obtaining a set of principal variables.
+3. **Association:** Finding rules that describe large portions of your data, such as ""people who bought X also bought Y.""
+
+**Examples:**
+- **Clustering:** Identifying different groups within a customer base (e.g., segmenting customers into different demographics).
+- **Anomaly Detection:**"
+Q2,Physics,Explain Newton's second law of motion with an example.,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:28:32.768,2026-11-05T03:29:04.123,31.3554,success,,49,300,349,4.9000000000000005e-06,5.9999999999999995e-05,6.489999999999999e-05,False,"Newton's second law of motion states that the acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object. Mathematically, it can be expressed as:
+
+\[ F = m \cdot a \]
+
+Where:
+- \( F \) is the net force applied to the object (in Newtons, N),
+- \( m \) is the mass of the object (in kilograms, kg),
+- \( a \) is the acceleration of the object (in meters per second squared, m/s²).
+
+### Example
+
+Let's consider an example where you push a shopping cart.
+
+1. **Initial Conditions**: The shopping cart has a mass of 20 kg and is initially at rest (velocity = 0 m/s).
+2. **Applied Force**: You apply a constant force of 40 N to the cart.
+3. **Acceleration Calculation**: Using Newton's second law, we can calculate the acceleration of the cart.
+
+\[ a = \frac{F}{m} = \frac{40 \, \text{N}}{20 \, \text{kg}} = 2 \, \text{m/s}^2 \]
+
+So, the shopping cart will accelerate at a rate of 2 meters per second squared when you push it with a force of 40 Newtons.
+
+### Explanation
+
+- **"
+Q3,Algorithms,What is the time complexity of binary search and why?,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:29:04.125,2026-11-05T03:29:34.928,30.8035,success,,49,300,349,4.9000000000000005e-06,5.9999999999999995e-05,6.489999999999999e-05,False,"The time complexity of binary search is O(log n).
+
+Binary search works by repeatedly dividing the search interval in half. Here's a step-by-step explanation of why its time complexity is O(log n):
+
+1. **Initial Interval**: The search starts with an interval covering the whole array (from index 0 to the last index).
+
+2. **Halving the Interval**: At each step, the algorithm compares the target value to the middle element of the current interval. Depending on the comparison result, it narrows down the search interval to either the left half or the right half.
+
+3. **Reduction in Search Space**: Each comparison effectively halves the size of the search space. If the array has `n` elements, after the first comparison, there are approximately `n/2` elements remaining. After the second comparison, there are approximately `n/4` elements remaining, and so on.
+
+4. **Number of Comparisons**: To reduce the search space from `n` to 1, you need to perform log base 2 operations. This is because:
+   - After the first comparison, the number of elements is reduced to `n/2`.
+   - After the second comparison, the number of elements is reduced to `n/4`.
+   - And so on...
+
+   Mathematically, this can be represented as:
+   \[
+   n \rightarrow \frac{n}{2} \rightarrow \frac{n}{4} \rightarrow \cdots \rightarrow \"
+Q4,Biology,Describe the process of photosynthesis in plants.,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:29:34.930,2026-11-05T03:30:05.078,30.1483,success,,47,300,347,4.7e-06,5.9999999999999995e-05,6.47e-05,False,"Photosynthesis is a vital process that occurs in plants, algae, and some bacteria, allowing them to convert light energy from the sun into chemical energy stored in glucose molecules. Here's a step-by-step description of the process:
+
+1. **Light Absorption**: Photosynthesis begins when chlorophyll and other pigments in the plant cells absorb light energy, primarily from the blue and red parts of the visible spectrum. This absorbed light energy excites electrons within the chlorophyll molecules.
+
+2. **Energy Conversion**: The excited electrons are passed through a series of proteins called the electron transport chain, which generates ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate). These are high-energy compounds that store the energy captured from sunlight.
+
+3. **Water Splitting (Photolysis)**: As part of the process of generating ATP, water molecules are split into oxygen, protons, and electrons. Oxygen is released as a byproduct during this process, which is why plants contribute significantly to the oxygen levels in the atmosphere.
+
+4. **Carbon Fixation**: In the Calvin cycle, also known as the light-independent reactions, carbon dioxide from the air is converted into organic compounds using the ATP and NADPH produced earlier. This process involves several enzymes and cycles through multiple steps to ultimately produce glucose and other sugars.
+
+5. **Glucose Production**: The end product of photosynthesis is glucose, which can be used immediately by the plant"
+Q5,Statistics,What is the Central Limit Theorem in statistics?,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:30:05.080,2026-11-05T03:30:26.844,21.7635,success,,48,213,261,4.800000000000001e-06,4.2600000000000005e-05,4.740000000000001e-05,False,"The Central Limit Theorem (CLT) is a fundamental concept in statistics that states that given a sufficiently large sample size from a population with a finite level of variance, the mean of all samples from the same population will be approximately equal to the mean of the population. Furthermore, the standard deviation of the sample means will be smaller than the standard deviation of the population, and it will be equal to the standard deviation of the population divided by the square root of the sample size.
+
+In simpler terms, the CLT tells us that if you take many random samples from any population and calculate the mean for each sample, the distribution of those sample means will tend to form a normal distribution (also known as a Gaussian distribution or bell curve), regardless of the shape of the original population distribution.
+
+This theorem is incredibly useful because it allows statisticians and data analysts to make inferences about a population based on sample data, even when the underlying population distribution is not normal. It's a cornerstone for many statistical tests and methods, such as hypothesis testing and confidence interval estimation."

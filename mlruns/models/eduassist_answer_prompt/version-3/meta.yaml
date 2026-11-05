@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1793828900577
+current_stage: None
+description: 'v3: enforces strict JSON schema output (answer/confidence/key_points)'
+last_updated_timestamp: 1793828900577
+name: eduassist_answer_prompt
+run_id: null
+run_link: null
+source: dummy-source
+status: READY
+status_message: null
+storage_location: dummy-source
+user_id: null
+version: 3

@@ -1,0 +1,6 @@
+aliases:
+  production: '3'
+creation_timestamp: 1793828900553
+description: 'v1: basic direct-answer prompt, no role or formatting guidance'
+last_updated_timestamp: 1793829860435
+name: eduassist_answer_prompt

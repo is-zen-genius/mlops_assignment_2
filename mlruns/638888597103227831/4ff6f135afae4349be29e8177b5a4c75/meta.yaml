@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/sibasis.mishra/Projects/Personal/MLOPS Assignment-2/mlruns/638888597103227831/4ff6f135afae4349be29e8177b5a4c75/artifacts
+end_time: 1793829857186
+entry_point_name: ''
+experiment_id: '638888597103227831'
+lifecycle_stage: active
+run_id: 4ff6f135afae4349be29e8177b5a4c75
+run_name: prompt_v3_json_output
+run_uuid: 4ff6f135afae4349be29e8177b5a4c75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1793829857173
+status: 3
+tags: []
+user_id: sibasis.mishra

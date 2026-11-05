@@ -1,0 +1,50 @@
+question_id,topic,question,prompt_version,model_name,call_path,start_time,end_time,latency_s,status,error_message,input_tokens,output_tokens,total_tokens,input_cost_usd,output_cost_usd,total_cost_usd,valid_json,response_text
+Q1,Machine Learning,What is the difference between supervised and unsupervised learning?,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:32:51.450,2026-11-05T03:33:07.575,16.1258,success,,106,161,267,1.06e-05,3.2200000000000003e-05,4.2800000000000004e-05,True,"{
+  ""answer"": ""In supervised learning, the algorithm is trained on a labeled dataset where each data point includes both input features and the corresponding output label. The goal is to learn a mapping from inputs to outputs so that the model can predict the correct output for new, unseen data. In contrast, unsupervised learning deals with unlabeled data, where the algorithm tries to find patterns, structure, or relationships within the data without any prior labels. The objective is often to discover hidden structures in the data."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""supervised learning uses labeled data"",
+    ""unsupervised learning uses unlabeled data"",
+    ""supervised learning aims to predict outputs"",
+    ""unsupervised learning aims to find patterns""
+  ]
+}"
+Q2,Physics,Explain Newton's second law of motion with an example.,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:07.577,2026-11-05T03:33:25.640,18.0627,success,,105,184,289,1.0500000000000001e-05,3.68e-05,4.73e-05,True,"{
+  ""answer"": ""Newton's second law of motion states that the acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object. Mathematically, it can be expressed as F = ma, where F is the net force applied, m is the mass of the object, and a is the acceleration produced. An example could be pushing a shopping cart; if you apply a constant force to the cart, it will accelerate more slowly if the cart is full (more mass) compared to when it is empty (less mass)."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""Newton's second law of motion"",
+    ""acceleration is directly proportional to net force"",
+    ""acceleration is inversely proportional to mass""
+  ]
+}"
+Q3,Algorithms,What is the time complexity of binary search and why?,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:25.643,2026-11-05T03:33:38.251,12.6075,success,,105,125,230,1.0500000000000001e-05,2.5e-05,3.55e-05,True,"{
+  ""answer"": ""The time complexity of binary search is O(log n). This is because with each comparison in binary search, the algorithm effectively halves the size of the searchable space. Starting from n elements, after log base 2 of n comparisons, only one element remains, making it highly efficient for large datasets."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""Binary search divides the search interval in half each time"",
+    ""Each division reduces the problem size by approximately half"",
+    ""Thus, the number of steps required grows logarithmically with the input size""
+  ]
+}"
+Q4,Biology,Describe the process of photosynthesis in plants.,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:38.252,2026-11-05T03:33:57.559,19.3063,success,,103,180,283,1.03e-05,3.6e-05,4.63e-05,True,"{
+  ""answer"": ""Photosynthesis is the process by which green plants use sunlight to synthesize foods with the help of chlorophyll, a pigment found in chloroplasts. During photosynthesis, light energy is captured and converted into chemical energy in the form of glucose. This process occurs primarily in the leaves of plants and involves several steps: absorption of light, conversion of light energy into chemical energy through the splitting of water molecules (photolysis), and the synthesis of glucose from carbon dioxide and water using the energy stored in ATP and NADPH produced during photolysis."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""light absorption"",
+    ""conversion of light energy into chemical energy"",
+    ""splitting of water molecules (photolysis)"",
+    ""synthesis of glucose"",
+    ""energy stored in ATP and NADPH""
+  ]
+}"
+Q5,Statistics,What is the Central Limit Theorem in statistics?,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:57.562,2026-11-05T03:34:11.074,13.512,success,,104,127,231,1.04e-05,2.54e-05,3.58e-05,True,"{
+  ""answer"": ""The Central Limit Theorem (CLT) states that given a sufficiently large sample size from a population with a finite level of variance, the mean of all samples from the same population will be approximately equal to the mean of the population, and the distribution of the sample means will tend to be normally distributed regardless of the population's distribution."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""sufficiently large sample size"",
+    ""finite level of variance"",
+    ""mean of all samples approximates population mean"",
+    ""distribution of sample means tends to normal""
+  ]
+}"

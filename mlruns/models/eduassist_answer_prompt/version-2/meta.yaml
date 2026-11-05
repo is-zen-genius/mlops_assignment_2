@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1793828900567
+current_stage: None
+description: 'v2: adds academic-assistant persona and undergraduate tone guidance'
+last_updated_timestamp: 1793828900567
+name: eduassist_answer_prompt
+run_id: null
+run_link: null
+source: dummy-source
+status: READY
+status_message: null
+storage_location: dummy-source
+user_id: null
+version: 2

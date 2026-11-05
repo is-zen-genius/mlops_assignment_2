@@ -1,0 +1,14 @@
+# Environment / secrets
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Hugging Face model cache (if HF_HOME is pointed inside the repo - normally it isn't)
+.cache/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Note: data/, mlruns/, and screenshots/ are intentionally NOT ignored - they are
+# graded deliverables (CSV outputs, MLflow tracking store, and evidence screenshots).

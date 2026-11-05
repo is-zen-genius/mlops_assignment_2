@@ -1,0 +1,60 @@
+question_id,topic,question,prompt_version,model_name,call_path,start_time,end_time,latency_s,status,error_message,input_tokens,output_tokens,total_tokens,input_cost_usd,output_cost_usd,total_cost_usd,valid_json,response_text
+Q1,Machine Learning,What is the difference between supervised and unsupervised learning?,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:30:26.855,2026-11-05T03:30:56.349,29.4934,success,,72,292,364,7.2000000000000005e-06,5.84e-05,6.560000000000001e-05,False,"Sure! Let's talk about supervised and unsupervised learning in a way that's easy to understand.
+
+Supervised learning is like when you have a teacher who tells you what the right answer is after you try to solve a problem. For example, imagine you're trying to guess what a word is based on its picture. Your teacher shows you many pictures of words and tells you which word each picture represents. Then, you practice guessing until you get it right. This is similar to how supervised learning works. You give the computer lots of examples (data) where the correct answers are already known, and the computer learns from these examples to make predictions or decisions.
+
+Unsupervised learning is more like playing detective without a clue about what you're looking for. Think of it as if you had a big box of mixed-up toys, and your job was to sort them out into different groups yourself. You don't know what each group should be at first, but you look at the toys and find patterns or similarities among them. The computer does something similar with data. It looks at all the information given to it and tries to find hidden patterns or groupings by itself, without any specific instructions on what to do.
+
+So, the main difference is that in supervised learning, the computer gets help from someone (the teacher) telling it what the right answers are, while in unsupervised learning, the computer has to figure everything out on its own!"
+Q2,Physics,Explain Newton's second law of motion with an example.,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:30:56.350,2026-11-05T03:31:26.740,30.3898,success,,71,300,371,7.100000000000001e-06,5.9999999999999995e-05,6.709999999999999e-05,False,"Sure! Let's talk about Newton's second law of motion. It's one of the three fundamental laws that describe how objects move.
+
+Newton's second law says that the force acting on an object is equal to the mass of the object multiplied by its acceleration. In simpler terms, it means if you want to make something move faster or slower, you need to push or pull it harder. The harder you push, the faster it will go, and the more it weighs, the harder you have to push to get it moving at all.
+
+Let's use an example to understand this better. Imagine you're pushing a shopping cart full of groceries versus pushing an empty shopping cart. If you push both carts with the same force, the empty cart will start moving much faster than the full cart because the empty cart has less mass.
+
+So, if we write it down using the formula:
+\[ \text{Force} = \text{Mass} \times \text{Acceleration} \]
+or
+\[ F = m \times a \]
+
+Here, \(F\) is the force you apply, \(m\) is the mass of the object (like your shopping cart), and \(a\) is the acceleration (how fast the object speeds up).
+
+For instance, if you push a 10 kg shopping cart with a force of 20 Newtons, it will accelerate at a rate of:
+\[ a = \frac{F}{m} = \frac{20 \text{ N"
+Q3,Algorithms,What is the time complexity of binary search and why?,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:31:26.742,2026-11-05T03:31:56.522,29.7801,success,,71,296,367,7.100000000000001e-06,5.92e-05,6.63e-05,False,"Binary search is a method used to find a specific item in a sorted list. It works by repeatedly dividing the search interval in half. Here's how it goes:
+
+1. Start with the middle element of the list.
+2. If the middle element matches the target value, then return its position.
+3. If the target value is less than the middle element, repeat the process on the left half of the list.
+4. If the target value is greater than the middle element, repeat the process on the right half of the list.
+
+This process continues until the target value is found or the search interval is empty (meaning the target value is not in the list).
+
+The time complexity of binary search is O(log n). This means that the number of steps required to find the target value grows logarithmically with the size of the input list. 
+
+Think of it like this: if you have 100 items, it takes about 7 steps to find something using binary search (because log base 2 of 100 is approximately 7). If you double the number of items to 200, it only takes about 8 steps (log base 2 of 200 is approximately 8). As the list gets much larger, the number of steps increases very slowly compared to the size of the list. That's why we say it's O(log n) - the growth rate is much slower than linear or quadratic growth."
+Q4,Biology,Describe the process of photosynthesis in plants.,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:31:56.524,2026-11-05T03:32:24.713,28.1883,success,,69,268,337,6.9e-06,5.36e-05,6.05e-05,False,"Photosynthesis is like a magical recipe that plants use to make their own food using sunlight! Here’s how it works:
+
+1. **Sunlight**: Plants have special parts called chloroplasts which contain a green pigment called chlorophyll. Chlorophyll helps absorb sunlight.
+
+2. **Water and Carbon Dioxide**: Plants take in water from the soil through their roots and carbon dioxide from the air through tiny holes on their leaves called stomata.
+
+3. **Light Reaction**: When sunlight hits the chlorophyll, it splits the water into oxygen (which plants release as a byproduct) and hydrogen. This process also creates a molecule called ATP (adenosine triphosphate), which is like a plant's energy currency.
+
+4. **Dark Reaction (Calvin Cycle)**: The hydrogen from the water combines with the carbon dioxide taken in by the plant. Using the ATP made earlier, the plant uses these ingredients to create glucose, which is a type of sugar that plants use as food.
+
+5. **Oxygen Release**: As a side effect, the plant releases oxygen into the air. This is why we can breathe!
+
+So, in short, plants turn sunlight, water, and carbon dioxide into glucose and oxygen. It’s a super efficient way for plants to make their own food and provide us with clean air!"
+Q5,Statistics,What is the Central Limit Theorem in statistics?,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:32:24.718,2026-11-05T03:32:51.448,26.7298,success,,70,261,331,7e-06,5.22e-05,5.92e-05,False,"The Central Limit Theorem (CLT) is a fundamental concept in statistics that helps us understand how the distribution of sample means behaves as the sample size gets larger.
+
+Imagine you have a bunch of numbers (which we call a population), and you take many groups of numbers from this population (these groups are called samples). Each group has a certain number of numbers in it (that's the sample size).
+
+Now, if you calculate the average of each of these groups (the sample means), the CLT tells us that when you plot all these sample means together, they will form a bell-shaped curve, no matter what the original numbers in your population look like! This bell-shaped curve is also known as a normal distribution.
+
+The key points are:
+1. The CLT applies to any population with a finite mean and variance.
+2. As the sample size increases, the distribution of the sample means gets closer to a normal distribution, even if the original data isn't normally distributed.
+3. The shape of the normal distribution depends on the sample size; the bigger the sample size, the more closely the distribution of sample means resembles a normal distribution.
+
+So, in short, the CLT lets us use the normal distribution to make predictions about the sample means, which is very useful in statistical analysis."

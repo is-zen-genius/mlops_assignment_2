@@ -1,0 +1,193 @@
+question_id,topic,question,prompt_version,model_name,call_path,start_time,end_time,latency_s,status,error_message,input_tokens,output_tokens,total_tokens,input_cost_usd,output_cost_usd,total_cost_usd,valid_json,response_text
+Q1,Machine Learning,What is the difference between supervised and unsupervised learning?,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:28:00.320,2026-11-05T03:28:32.765,32.4452,success,,50,300,350,5e-06,5.9999999999999995e-05,6.5e-05,False,"Supervised and unsupervised learning are two fundamental types of machine learning techniques used to train models on data. Here's a clear explanation of each:
+
+### Supervised Learning
+
+**Definition:** In supervised learning, the model is trained using labeled data, which means that the training dataset includes both input features and corresponding output labels.
+
+**Process:**
+1. **Training Phase:** The model learns from the labeled examples provided in the training dataset.
+2. **Prediction Phase:** Once trained, the model can predict the output for new, unseen data based on its learned patterns.
+
+**Examples:**
+- **Classification Tasks:** Predicting whether an email is spam or not spam.
+- **Regression Tasks:** Estimating the price of a house based on various features like size, location, etc.
+
+### Unsupervised Learning
+
+**Definition:** In unsupervised learning, the model is trained using unlabeled data, meaning there are no predefined output labels in the training dataset.
+
+**Process:**
+1. **Clustering:** Grouping similar data points together without prior knowledge of groupings.
+2. **Dimensionality Reduction:** Reducing the number of random variables under consideration by obtaining a set of principal variables.
+3. **Association:** Finding rules that describe large portions of your data, such as ""people who bought X also bought Y.""
+
+**Examples:**
+- **Clustering:** Identifying different groups within a customer base (e.g., segmenting customers into different demographics).
+- **Anomaly Detection:**"
+Q2,Physics,Explain Newton's second law of motion with an example.,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:28:32.768,2026-11-05T03:29:04.123,31.3554,success,,49,300,349,4.9000000000000005e-06,5.9999999999999995e-05,6.489999999999999e-05,False,"Newton's second law of motion states that the acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object. Mathematically, it can be expressed as:
+
+\[ F = m \cdot a \]
+
+Where:
+- \( F \) is the net force applied to the object (in Newtons, N),
+- \( m \) is the mass of the object (in kilograms, kg),
+- \( a \) is the acceleration of the object (in meters per second squared, m/s²).
+
+### Example
+
+Let's consider an example where you push a shopping cart.
+
+1. **Initial Conditions**: The shopping cart has a mass of 20 kg and is initially at rest (velocity = 0 m/s).
+2. **Applied Force**: You apply a constant force of 40 N to the cart.
+3. **Acceleration Calculation**: Using Newton's second law, we can calculate the acceleration of the cart.
+
+\[ a = \frac{F}{m} = \frac{40 \, \text{N}}{20 \, \text{kg}} = 2 \, \text{m/s}^2 \]
+
+So, the shopping cart will accelerate at a rate of 2 meters per second squared when you push it with a force of 40 Newtons.
+
+### Explanation
+
+- **"
+Q3,Algorithms,What is the time complexity of binary search and why?,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:29:04.125,2026-11-05T03:29:34.928,30.8035,success,,49,300,349,4.9000000000000005e-06,5.9999999999999995e-05,6.489999999999999e-05,False,"The time complexity of binary search is O(log n).
+
+Binary search works by repeatedly dividing the search interval in half. Here's a step-by-step explanation of why its time complexity is O(log n):
+
+1. **Initial Interval**: The search starts with an interval covering the whole array (from index 0 to the last index).
+
+2. **Halving the Interval**: At each step, the algorithm compares the target value to the middle element of the current interval. Depending on the comparison result, it narrows down the search interval to either the left half or the right half.
+
+3. **Reduction in Search Space**: Each comparison effectively halves the size of the search space. If the array has `n` elements, after the first comparison, there are approximately `n/2` elements remaining. After the second comparison, there are approximately `n/4` elements remaining, and so on.
+
+4. **Number of Comparisons**: To reduce the search space from `n` to 1, you need to perform log base 2 operations. This is because:
+   - After the first comparison, the number of elements is reduced to `n/2`.
+   - After the second comparison, the number of elements is reduced to `n/4`.
+   - And so on...
+
+   Mathematically, this can be represented as:
+   \[
+   n \rightarrow \frac{n}{2} \rightarrow \frac{n}{4} \rightarrow \cdots \rightarrow \"
+Q4,Biology,Describe the process of photosynthesis in plants.,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:29:34.930,2026-11-05T03:30:05.078,30.1483,success,,47,300,347,4.7e-06,5.9999999999999995e-05,6.47e-05,False,"Photosynthesis is a vital process that occurs in plants, algae, and some bacteria, allowing them to convert light energy from the sun into chemical energy stored in glucose molecules. Here's a step-by-step description of the process:
+
+1. **Light Absorption**: Photosynthesis begins when chlorophyll and other pigments in the plant cells absorb light energy, primarily from the blue and red parts of the visible spectrum. This absorbed light energy excites electrons within the chlorophyll molecules.
+
+2. **Energy Conversion**: The excited electrons are passed through a series of proteins called the electron transport chain, which generates ATP (adenosine triphosphate) and NADPH (nicotinamide adenine dinucleotide phosphate). These are high-energy compounds that store the energy captured from sunlight.
+
+3. **Water Splitting (Photolysis)**: As part of the process of generating ATP, water molecules are split into oxygen, protons, and electrons. Oxygen is released as a byproduct during this process, which is why plants contribute significantly to the oxygen levels in the atmosphere.
+
+4. **Carbon Fixation**: In the Calvin cycle, also known as the light-independent reactions, carbon dioxide from the air is converted into organic compounds using the ATP and NADPH produced earlier. This process involves several enzymes and cycles through multiple steps to ultimately produce glucose and other sugars.
+
+5. **Glucose Production**: The end product of photosynthesis is glucose, which can be used immediately by the plant"
+Q5,Statistics,What is the Central Limit Theorem in statistics?,v1,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:30:05.080,2026-11-05T03:30:26.844,21.7635,success,,48,213,261,4.800000000000001e-06,4.2600000000000005e-05,4.740000000000001e-05,False,"The Central Limit Theorem (CLT) is a fundamental concept in statistics that states that given a sufficiently large sample size from a population with a finite level of variance, the mean of all samples from the same population will be approximately equal to the mean of the population. Furthermore, the standard deviation of the sample means will be smaller than the standard deviation of the population, and it will be equal to the standard deviation of the population divided by the square root of the sample size.
+
+In simpler terms, the CLT tells us that if you take many random samples from any population and calculate the mean for each sample, the distribution of those sample means will tend to form a normal distribution (also known as a Gaussian distribution or bell curve), regardless of the shape of the original population distribution.
+
+This theorem is incredibly useful because it allows statisticians and data analysts to make inferences about a population based on sample data, even when the underlying population distribution is not normal. It's a cornerstone for many statistical tests and methods, such as hypothesis testing and confidence interval estimation."
+Q1,Machine Learning,What is the difference between supervised and unsupervised learning?,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:30:26.855,2026-11-05T03:30:56.349,29.4934,success,,72,292,364,7.2000000000000005e-06,5.84e-05,6.560000000000001e-05,False,"Sure! Let's talk about supervised and unsupervised learning in a way that's easy to understand.
+
+Supervised learning is like when you have a teacher who tells you what the right answer is after you try to solve a problem. For example, imagine you're trying to guess what a word is based on its picture. Your teacher shows you many pictures of words and tells you which word each picture represents. Then, you practice guessing until you get it right. This is similar to how supervised learning works. You give the computer lots of examples (data) where the correct answers are already known, and the computer learns from these examples to make predictions or decisions.
+
+Unsupervised learning is more like playing detective without a clue about what you're looking for. Think of it as if you had a big box of mixed-up toys, and your job was to sort them out into different groups yourself. You don't know what each group should be at first, but you look at the toys and find patterns or similarities among them. The computer does something similar with data. It looks at all the information given to it and tries to find hidden patterns or groupings by itself, without any specific instructions on what to do.
+
+So, the main difference is that in supervised learning, the computer gets help from someone (the teacher) telling it what the right answers are, while in unsupervised learning, the computer has to figure everything out on its own!"
+Q2,Physics,Explain Newton's second law of motion with an example.,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:30:56.350,2026-11-05T03:31:26.740,30.3898,success,,71,300,371,7.100000000000001e-06,5.9999999999999995e-05,6.709999999999999e-05,False,"Sure! Let's talk about Newton's second law of motion. It's one of the three fundamental laws that describe how objects move.
+
+Newton's second law says that the force acting on an object is equal to the mass of the object multiplied by its acceleration. In simpler terms, it means if you want to make something move faster or slower, you need to push or pull it harder. The harder you push, the faster it will go, and the more it weighs, the harder you have to push to get it moving at all.
+
+Let's use an example to understand this better. Imagine you're pushing a shopping cart full of groceries versus pushing an empty shopping cart. If you push both carts with the same force, the empty cart will start moving much faster than the full cart because the empty cart has less mass.
+
+So, if we write it down using the formula:
+\[ \text{Force} = \text{Mass} \times \text{Acceleration} \]
+or
+\[ F = m \times a \]
+
+Here, \(F\) is the force you apply, \(m\) is the mass of the object (like your shopping cart), and \(a\) is the acceleration (how fast the object speeds up).
+
+For instance, if you push a 10 kg shopping cart with a force of 20 Newtons, it will accelerate at a rate of:
+\[ a = \frac{F}{m} = \frac{20 \text{ N"
+Q3,Algorithms,What is the time complexity of binary search and why?,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:31:26.742,2026-11-05T03:31:56.522,29.7801,success,,71,296,367,7.100000000000001e-06,5.92e-05,6.63e-05,False,"Binary search is a method used to find a specific item in a sorted list. It works by repeatedly dividing the search interval in half. Here's how it goes:
+
+1. Start with the middle element of the list.
+2. If the middle element matches the target value, then return its position.
+3. If the target value is less than the middle element, repeat the process on the left half of the list.
+4. If the target value is greater than the middle element, repeat the process on the right half of the list.
+
+This process continues until the target value is found or the search interval is empty (meaning the target value is not in the list).
+
+The time complexity of binary search is O(log n). This means that the number of steps required to find the target value grows logarithmically with the size of the input list. 
+
+Think of it like this: if you have 100 items, it takes about 7 steps to find something using binary search (because log base 2 of 100 is approximately 7). If you double the number of items to 200, it only takes about 8 steps (log base 2 of 200 is approximately 8). As the list gets much larger, the number of steps increases very slowly compared to the size of the list. That's why we say it's O(log n) - the growth rate is much slower than linear or quadratic growth."
+Q4,Biology,Describe the process of photosynthesis in plants.,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:31:56.524,2026-11-05T03:32:24.713,28.1883,success,,69,268,337,6.9e-06,5.36e-05,6.05e-05,False,"Photosynthesis is like a magical recipe that plants use to make their own food using sunlight! Here’s how it works:
+
+1. **Sunlight**: Plants have special parts called chloroplasts which contain a green pigment called chlorophyll. Chlorophyll helps absorb sunlight.
+
+2. **Water and Carbon Dioxide**: Plants take in water from the soil through their roots and carbon dioxide from the air through tiny holes on their leaves called stomata.
+
+3. **Light Reaction**: When sunlight hits the chlorophyll, it splits the water into oxygen (which plants release as a byproduct) and hydrogen. This process also creates a molecule called ATP (adenosine triphosphate), which is like a plant's energy currency.
+
+4. **Dark Reaction (Calvin Cycle)**: The hydrogen from the water combines with the carbon dioxide taken in by the plant. Using the ATP made earlier, the plant uses these ingredients to create glucose, which is a type of sugar that plants use as food.
+
+5. **Oxygen Release**: As a side effect, the plant releases oxygen into the air. This is why we can breathe!
+
+So, in short, plants turn sunlight, water, and carbon dioxide into glucose and oxygen. It’s a super efficient way for plants to make their own food and provide us with clean air!"
+Q5,Statistics,What is the Central Limit Theorem in statistics?,v2,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:32:24.718,2026-11-05T03:32:51.448,26.7298,success,,70,261,331,7e-06,5.22e-05,5.92e-05,False,"The Central Limit Theorem (CLT) is a fundamental concept in statistics that helps us understand how the distribution of sample means behaves as the sample size gets larger.
+
+Imagine you have a bunch of numbers (which we call a population), and you take many groups of numbers from this population (these groups are called samples). Each group has a certain number of numbers in it (that's the sample size).
+
+Now, if you calculate the average of each of these groups (the sample means), the CLT tells us that when you plot all these sample means together, they will form a bell-shaped curve, no matter what the original numbers in your population look like! This bell-shaped curve is also known as a normal distribution.
+
+The key points are:
+1. The CLT applies to any population with a finite mean and variance.
+2. As the sample size increases, the distribution of the sample means gets closer to a normal distribution, even if the original data isn't normally distributed.
+3. The shape of the normal distribution depends on the sample size; the bigger the sample size, the more closely the distribution of sample means resembles a normal distribution.
+
+So, in short, the CLT lets us use the normal distribution to make predictions about the sample means, which is very useful in statistical analysis."
+Q1,Machine Learning,What is the difference between supervised and unsupervised learning?,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:32:51.450,2026-11-05T03:33:07.575,16.1258,success,,106,161,267,1.06e-05,3.2200000000000003e-05,4.2800000000000004e-05,True,"{
+  ""answer"": ""In supervised learning, the algorithm is trained on a labeled dataset where each data point includes both input features and the corresponding output label. The goal is to learn a mapping from inputs to outputs so that the model can predict the correct output for new, unseen data. In contrast, unsupervised learning deals with unlabeled data, where the algorithm tries to find patterns, structure, or relationships within the data without any prior labels. The objective is often to discover hidden structures in the data."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""supervised learning uses labeled data"",
+    ""unsupervised learning uses unlabeled data"",
+    ""supervised learning aims to predict outputs"",
+    ""unsupervised learning aims to find patterns""
+  ]
+}"
+Q2,Physics,Explain Newton's second law of motion with an example.,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:07.577,2026-11-05T03:33:25.640,18.0627,success,,105,184,289,1.0500000000000001e-05,3.68e-05,4.73e-05,True,"{
+  ""answer"": ""Newton's second law of motion states that the acceleration of an object as produced by a net force is directly proportional to the magnitude of the net force, in the same direction as the net force, and inversely proportional to the mass of the object. Mathematically, it can be expressed as F = ma, where F is the net force applied, m is the mass of the object, and a is the acceleration produced. An example could be pushing a shopping cart; if you apply a constant force to the cart, it will accelerate more slowly if the cart is full (more mass) compared to when it is empty (less mass)."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""Newton's second law of motion"",
+    ""acceleration is directly proportional to net force"",
+    ""acceleration is inversely proportional to mass""
+  ]
+}"
+Q3,Algorithms,What is the time complexity of binary search and why?,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:25.643,2026-11-05T03:33:38.251,12.6075,success,,105,125,230,1.0500000000000001e-05,2.5e-05,3.55e-05,True,"{
+  ""answer"": ""The time complexity of binary search is O(log n). This is because with each comparison in binary search, the algorithm effectively halves the size of the searchable space. Starting from n elements, after log base 2 of n comparisons, only one element remains, making it highly efficient for large datasets."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""Binary search divides the search interval in half each time"",
+    ""Each division reduces the problem size by approximately half"",
+    ""Thus, the number of steps required grows logarithmically with the input size""
+  ]
+}"
+Q4,Biology,Describe the process of photosynthesis in plants.,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:38.252,2026-11-05T03:33:57.559,19.3063,success,,103,180,283,1.03e-05,3.6e-05,4.63e-05,True,"{
+  ""answer"": ""Photosynthesis is the process by which green plants use sunlight to synthesize foods with the help of chlorophyll, a pigment found in chloroplasts. During photosynthesis, light energy is captured and converted into chemical energy in the form of glucose. This process occurs primarily in the leaves of plants and involves several steps: absorption of light, conversion of light energy into chemical energy through the splitting of water molecules (photolysis), and the synthesis of glucose from carbon dioxide and water using the energy stored in ATP and NADPH produced during photolysis."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""light absorption"",
+    ""conversion of light energy into chemical energy"",
+    ""splitting of water molecules (photolysis)"",
+    ""synthesis of glucose"",
+    ""energy stored in ATP and NADPH""
+  ]
+}"
+Q5,Statistics,What is the Central Limit Theorem in statistics?,v3,Qwen/Qwen2.5-3B-Instruct,local_transformers,2026-11-05T03:33:57.562,2026-11-05T03:34:11.074,13.512,success,,104,127,231,1.04e-05,2.54e-05,3.58e-05,True,"{
+  ""answer"": ""The Central Limit Theorem (CLT) states that given a sufficiently large sample size from a population with a finite level of variance, the mean of all samples from the same population will be approximately equal to the mean of the population, and the distribution of the sample means will tend to be normally distributed regardless of the population's distribution."",
+  ""confidence"": ""high"",
+  ""key_points"": [
+    ""sufficiently large sample size"",
+    ""finite level of variance"",
+    ""mean of all samples approximates population mean"",
+    ""distribution of sample means tends to normal""
+  ]
+}"

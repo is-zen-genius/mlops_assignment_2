@@ -1,0 +1,28 @@
+# EduAssist LLMOps assignment - pinned direct dependencies.
+# Tested with Python 3.12.11 on macOS (Apple Silicon, MPS backend). See README.md for setup.
+
+# --- LLM + tokenization (local inference fallback; also powers the optional HF API path) ---
+torch==2.15.0
+transformers==5.22.1
+accelerate==1.15.0
+sentencepiece==0.2.2
+huggingface-hub==2.4.0
+
+# --- MLOps / experiment tracking / Prompt Registry ---
+mlflow==2.22.5
+sqlalchemy>=2.0,<2.1
+
+# --- Data handling ---
+pandas==2.3.3
+numpy==1.26.4
+matplotlib==3.11.2
+
+# --- Notebook ---
+jupyter==1.1.1
+ipykernel==7.4.0
+nbconvert==7.17.2
+
+# --- Report generation / misc ---
+fpdf2==2.9.0
+python-dotenv==1.2.4
+requests==2.34.2
